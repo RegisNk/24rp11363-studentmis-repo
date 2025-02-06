@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  24rp11363-php:
+    build:
+      context: .  # Context set to the current project folder
+    container_name: 24rp11363-php
+    ports:
+      - "8085:80"  # Expose container port 80 to host port 8085
+    volumes:
+      - .:/var/www/html  # Mount the project directory to the container's web directory
+    networks:
+      - webnet
+
+networks:
+  webnet:
+    driver: bridge

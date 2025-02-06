@@ -13,7 +13,7 @@
 
     <div class="container mt-5">
         <h2 class="text-center">USER REGISTRATION</h2>
-        <form action="register.php" method="POST">
+        <form action="##" method="POST">
             <div class="form-group">
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" class="form-control" required placeholder="Enter your full name">
